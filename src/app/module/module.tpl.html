@@ -1,0 +1,43 @@
+<div class="row">
+  <h1 class="page-header">
+    New Module
+    <small>The quick brown fox</small>
+  </h1>
+  <p>
+    The quick brown fox jump over the lazy dog. The quick brown fox jump over the lazy dog.
+    The quick brown fox jump over the lazy dog. The quick brown fox jump over the lazy dog.
+    The quick brown fox jump over the lazy dog. The quick brown fox jump over the lazy dog.
+    The quick brown fox jump over the lazy dog. The quick brown fox jump over the lazy dog.
+  </p>
+
+  <h2>Why?</h2>
+
+  <p>
+    Because of the quick brown fox jump over the lazy dog.
+  </p>
+
+  <ul>
+    <li class="dropdown">
+      <a class="btn dropdown-toggle">
+        Select correct phrase{{selectedItem}}
+      </a>
+      <ul class="dropdown-menu">
+        <li ng-repeat="choice in dropdownItems">
+          <a ng-click="selectItem(choice)">{{choice}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <a class="btn" ng-click="viewList()">View List</a>
+  <div ng-repeat="emailList in emailArray">
+    {{"Recipients: "+emailList.recipients}}</br>
+    <!--<div ng-repeat="recipientList in emailList.recipients">
+      {{recipientList}}
+    </div>-->
+    {{"Subject: "+emailList.subject}} </br>
+    <p>{{"Message: "+emailList.body}}</p> </br>
+  </div>
+
+</div>
+

@@ -1,0 +1,4 @@
+TurboGears2
+setuptools
+google-cloud
+oauth2client==2.2.0
